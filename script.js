@@ -71,3 +71,8 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+<script>
+  function toggleMenu() {
+    document.querySelector('.header__ul').classList.toggle('active');
+  }
+</script>

@@ -578,3 +578,34 @@ h2::after {
     gap: 15px;
   }
 }
+/* الهامبرغر */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: var(--primary);
+}
+
+/* responsive navbar */
+@media (max-width: 768px) {
+  .header__ul {
+    display: none; /* نخفي القائمة في البداية */
+    flex-direction: column;
+    gap: 1rem;
+    background-color: var(--light-purple);
+    padding: 20px;
+    border-radius: 10px;
+    position: absolute;
+    top: 70px; /* على حسب ارتفاع الـ header */
+    right: 20px;
+    z-index: 1000;
+  }
+
+  .header__ul.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
